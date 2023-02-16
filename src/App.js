@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Licensing from "./components/Licensing";
+// import Marketing from "./components/Marketing";
+// import Distribution from "./components/Distribution";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Services from "./components/Services";
+import Projects from "./components/Projects";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="scrolltotop">
+        <ScrollToTop smooth color="red" />
+      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/projects" component={Projects} />
+          {/* <Route exact path="/distribution" component={Distribution} /> */}
+          {/* <Route exact path="/marketing" component={Marketing} /> */}
+          {/* <Route exact path="/licensing" component={Licensing} /> */}
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </Router>
     </div>
   );
 }

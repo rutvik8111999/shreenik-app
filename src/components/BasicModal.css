@@ -1,0 +1,72 @@
+.modal-button {
+  padding: 10px;
+  background-color: rgb(238, 16, 16);
+  font-size: 20px;
+  /* text-transform: capitalize; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  box-shadow: 7px 7px 0px -4px rgba(0, 0, 0, 0.75);
+}
+
+.addCustomerBtn button:hover {
+  transform: scale(0.98);
+  box-shadow: 5px 5px 0px -4px rgba(0, 0, 0, 0.75);
+  color: #ddd;
+}
+
+.addCustomerBtn button:focus {
+  outline: none;
+}
+#modallength-form {
+  padding: 20px;
+  margin: 20px;
+}
+
+.modal-container p {
+  text-align: center;
+}
+.modal-group {
+  margin-top: 10px;
+}
+#modallength-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+#modallength-form input,
+#modallength-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+#modallength-form textarea {
+  height: 150px;
+}
+#modallength-form input:focus,
+#modallength-form textarea:focus {
+  outline: none;
+  border-color: red;
+}
+.modal-btn {
+  /* display: inline-block; */
+  font-size: 18px;
+  color: #fff;
+  background: red;
+  padding: 13px 20px;
+
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  margin-left: 37%;
+  border: 3px solid black;
+}
+@media (max-width: 1081px) {
+  .modal-button {
+    display: none;
+  }
+}

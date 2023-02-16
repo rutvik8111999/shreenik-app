@@ -1,0 +1,244 @@
+.navbar {
+  margin: 0%;
+  height: 120px;
+  width: 100%;
+  box-shadow: inset;
+  background-color: white;
+  color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 9px 20px -1px rgba(244, 244, 247, 0.83);
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+.nav-logo img {
+  height: 100px;
+  /* width: 300px; */
+}
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 50px;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.3s all;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.contact-nav {
+  /* border: 2px solid #222; */
+  /* background-color: midnightblue; */
+  padding: 10px;
+  color: black;
+  /* border-radius: 50px; */
+}
+
+.ServicesDropdown {
+  position: relative;
+}
+
+.DropDown {
+  /* border: 2px solid black; */
+  display: none;
+  box-shadow: 0px 9px 20px -1px rgba(2, 2, 2, 0.83);
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px 10px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  cursor: pointer;
+}
+
+.DropDown.activeDrop {
+  display: block;
+}
+
+.DropArrow {
+  position: absolute;
+  top: 32%;
+  color: black;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-left: 4px;
+  /* box-shadow: 0px 9px 9px -1px rgba(2, 2, 2, 0.83); */
+}
+
+.DropDown ul li {
+  list-style: none;
+  color: black;
+  border-bottom: 2px solid #ccc;
+
+  line-height: 50px;
+}
+
+.DropDown ul :nth-last-child(1) {
+  border-bottom: none;
+}
+.socialicons a {
+  text-decoration: none;
+  color: #222;
+  margin: 5px;
+}
+.socialicons a:hover {
+  color: red;
+}
+.letsmeet {
+  margin: 5px;
+  color: #222;
+}
+
+@media only screen and (max-width: 1080px) {
+  .navbar {
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .nav-logo img {
+    margin-left: -20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    justify-content: space-evenly;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s all;
+  }
+  .nav-links.active {
+    background: rgba(192, 192, 192, 1);
+    left: 0;
+  }
+  .nav-item {
+    padding: 10px 0;
+  }
+  .nav-link {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .nav-link:hover {
+    color: red;
+  }
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 960px;
+  }
+  /* .contact-nav {
+    color: white;
+  } */
+  .DropArrow {
+    top: 38%;
+    border: 2px solid #222;
+  }
+  .DropDown {
+    top: 400%;
+    left: 15%;
+  }
+}
+
+@media (width: 820px) {
+  .DropDown {
+    top: 320%;
+    left: 64%;
+  }
+}
+
+@media (width: 768px) {
+  .DropDown {
+    top: 320%;
+    left: 64%;
+  }
+}
+@media (max-width: 1081px) {
+  .socialicons a {
+    display: none;
+  }
+}
+
+@media (max-width: 1004px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 860px;
+  }
+}
+@media (max-width: 908px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 780px;
+  }
+}
+@media (max-width: 828px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 690px;
+  }
+}
+@media (max-width: 738px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 590px;
+  }
+}
+@media (max-width: 625px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 490px;
+  }
+}
+@media (max-width: 540px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 410px;
+  }
+}
+@media (max-width: 460px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 360px;
+  }
+}
+/* @media (max-width: 493px) {
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    left: 270px;
+  }
+} */

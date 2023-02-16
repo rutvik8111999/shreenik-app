@@ -1,0 +1,150 @@
+.Homemain {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* min-height: 100vh; */
+  /* padding-top: 150px; */
+}
+.brand__name {
+  color: #e31e24;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.homeslogan {
+  margin-top: 125px;
+}
+.brand__work {
+  color: #e31e24;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+/* .movie__Text {
+  margin-top: 8px;
+  color: #f00000;
+  font-size: 30px;
+} */
+
+.disthome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2); */
+  height: 62vh;
+}
+.disthome h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* margin-bottom: 30px; */
+}
+.disthome img {
+  width: 40vw;
+  /* border-radius: 10px; */
+  /* border-radius: 5px; */
+  margin-left: 10px;
+  /* transition: 1s; */
+}
+/* .disthome img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+} */
+.disthome p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.knowmore {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonknowmore {
+  border: none;
+  height: 7vh;
+  width: 8vw;
+  background-color: red;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 3px solid black;
+  font-size: 18px;
+}
+.buttonknowmore:hover {
+  background-color: black;
+}
+.btn-home {
+  /* display: inline-block; */
+  font-size: 18px;
+  color: #fff;
+  background: red;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  /* margin-left: 40%; */
+  margin-top: 40px;
+  border: 3px solid black;
+}
+.btn-home a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-home:hover {
+  background: black;
+}
+.content123 {
+  position: absolute;
+  transform: translate(-55%, -50%);
+  justify-content: center;
+  top: 50%;
+  left: 54.5%;
+
+  text-align: center;
+  width: 90vw;
+}
+
+.content123 p {
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
+  display: inline;
+}
+@media (max-width: 1080px) {
+  .homeslogan {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .disthome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-left: 20px;
+    /* box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2); */
+    height: 62vh;
+  }
+  .disthome img {
+    /* width: 0;
+    height: 0; */
+    display: none;
+    /* width: 40vw; */
+    /* border-radius: 10px; */
+    /* border-radius: 5px; */
+    /* margin-left: 10px; */
+    /* transition: 1s; */
+  }
+}
